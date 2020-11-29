@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            background-color:#E5E5E5;
+        }
+
+        #title {
+            width: 375px;
+            height: 52px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #prev {
+            width: 12px;
+            height: 19px;
+            background: url("Vector1.png");
+            margin-left: 29.5px;
+        }
+        #ttxt {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 90px;
+
+        }
+        #body {
+            width: 327px;
+            height: 448px;
+            background: #FFFFFF;
+            padding-top: 30px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        #food {
+            width: 375px;
+            height: 219px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("image 6.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #ftxt {
+            width: 375px;
+            height: 62.96px;
+            margin-top: 100px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            align-items: center;
+            color: #FFFFFF;
+            text-shadow: 0px 3.17333px 3.17333px rgba(0, 0, 0, 0.25);
+        }
+        #loc{
+            width: 375px;
+            height: 26.01px;
+            bottom: 506.99px;
+            margin-top: 49.02px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-shadow: 0px 3.17333px 3.17333px rgba(0, 0, 0, 0.25);
+        }
+        .fstar{
+            width: 32px;
+            height: 32px;
+            background-image: url("image 28.png");
+            margin-right: 12px;
+        }
+        .estar{
+            width: 32px;
+            height: 32px;
+            background-image: url("image 29.png");
+            margin-right: 12px;
+        }
+
+        #text {
+            width: 297px;
+            height: 112px;
+            outline-style: none;
+            background: #F9F9F9;
+            border-radius: 10px;
+            resize: none;
+            margin-top: 20px;
+            border: 0;
+            padding: 15px;
+            font-size: 14px;
+            font-family: Arial;
+            color: #938E8E;
+        }
+
+        button {
+            width: 326px;
+            height: 43px;
+            background: linear-gradient(94.03deg, #82C3FF 0%, #C464FF 100%);
+            box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border: 0;
+        }
+
+        #bspan{
+            width: 279.72px;
+            height: 43px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            align-items: center;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        #cam{
+            width: 102px;
+            height: 102px;
+            background: #FFFFFF;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+            margin-right: 11px;
+        }
+
+        #camtxt{
+            text-align: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            color: #333333;
+            margin-top: 6px;
+        }
+
+        #img1{
+            width: 101px;
+            height: 102px;
+            background: url("image 21.png");
+            border-radius: 3px;
+            margin-top: 25px;
+            margin-right: 11px;
+        }
+
+        #img2{
+            width: 101px;
+            height: 102px;
+            background: url("image 21.png");
+            border-radius: 3px;
+            margin-top: 25px;
+            margin-right: 11px;
+        }
+
+        .x {
+            width: 12px;
+            height: 12px;
+            font-size: 10px;
+            float: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            background: url("Ellipse 19.png");
+        }
+    </style>
+
+</head>
+<body>
+<div id="title">
+    <div id="prev"></div>
+    <span id="ttxt">리뷰 남기기</span>
+</div>
+<div id="food">
+    <span id="ftxt">소융대 비빔면+삼겹살</span>
+    <span id="loc">B-1</span>
+</div>
+<div id="body">
+    <div style="display:flex; flex-direction: row; justify-content: center">
+        <div class="fstar"></div>
+        <div class="fstar"></div>
+        <div class="fstar"></div>
+        <div class="fstar"></div>
+        <div class="estar"></div>
+    </div>
+    <textarea id="text" placeholder="솔직한 리뷰를 작성해주세요!" ></textarea>
+    <div style="display: flex; flex-direction: row">
+        <div id="cam">
+            <img src="vector.png" alt="" width="32" height="30" style="margin-left: 35px; margin-top:24px ">
+            <span id="camtxt">사진 추가</span>
+        </div>
+        <div id="img1">
+            <div class="x">x</div>
+        </div>
+        <div id="img2">
+            <div class="x">x</div>
+        </div>
+    </div>
+    <button style="margin-top: 30px"><span id="bspan">리뷰작성</span></button>
+</div>
+</body>
+</html>
